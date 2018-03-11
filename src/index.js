@@ -101,152 +101,237 @@ function forged() {
 }
 
 /**
- * @name terminatedAfterBirthOf
+ * @name terminatedAfterForgeOf
  */
-function terminatedAfterBirthOf() {
+function terminatedAfterForgeOf() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name isForgedBeforeTerminationOf() {}
+ * @name isForgedBeforeTerminationOf
  */
 function isForgedBeforeTerminationOf() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name contemporaryOf() {}
+ * @name contemporaryOf
  */
 function contemporaryOf() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name survives() {}
+ * @name survives
  */
 function survives() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name isSurvivedBy() {}
+ * @name isSurvivedBy
  */
 function isSurvivedBy() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name isOlderThan() {}
+ * @name isOlderThan
  */
 function isOlderThan() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name isYoungerThan() {}
+ * @name isYoungerThan
  */
 function isYoungerThan() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name younger() {}
+ * @name younger
  */
 function younger() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name older() {}
+ * @name older
  */
 function older() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name youngerContemporaryOf() {}
+ * @name youngerContemporaryOf
  */
 function youngerContemporaryOf() {
   var to = this
-
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
 }
 
 /**
- * @name survivedByContemporaryOf() {}
+ * @name survivedByContemporaryOf
  */
-function survivedByContemporaryOf() {}
+function survivedByContemporaryOf() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name survivingContemporaryOf() {}
+ * @name survivingContemporaryOf
  */
-function survivingContemporaryOf() {}
+function survivingContemporaryOf() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name isTailToTailWith() {}
+ * @name isTailToTailWith
  */
-function isTailToTailWith() {}
+function isTailToTailWith() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name isHeadToHeadWith() {}
+ * @name isHeadToHeadWith
  */
-function isHeadToHeadWith() {}
+function isHeadToHeadWith() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name after() {}
+ * @name after
  */
-function after() {}
+function after() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name before() {}
+ * @name before
  */
-function before() {}
+function before() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name contains() {}
+ * @name contains
  */
-function contains() {}
+function contains() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name during() {}
+ * @name during
  */
-function during() {}
+function during() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name overlappedBy() {}
+ * @name overlappedBy
  */
-function overlappedBy() {}
+function overlappedBy() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name overlaps() {}
+ * @name overlaps
  */
-function overlaps() {}
+function overlaps() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name equals() {}
+ * @name equals
  */
-function equals() {}
+function equals() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name starts() {}
+ * @name starts
  */
-function starts() {}
+function starts() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name startedBy() {}
+ * @name startedBy
  */
-function startedBy() {}
+function startedBy() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name finishes() {}
+ * @name finishes
  * @param {Object} tempObj A temporal object which may or may not have been
  * forged (so check with the method-promise!). So, an object merely with a
  * clock base that has not been initialized can be "finished" pre-emptively
@@ -254,9 +339,14 @@ function startedBy() {}
  * @TODO
  */
 function finishes(tempObj) {
-  var defaultState = false
   var to = this
   return new Promise((res, rej) => {
+    // @TODO We first need to compare timestamps of the given clocks. We're
+    // essentially abstracting the concept of "clock" to enable clocks that
+    // can initialize with a vector clock but then still finish a non-logical
+    // clock like one based in a timezone; and vice versa: a non-logical clock
+    // can "finish" a logical clock (vector clock, etc.). Let's call this
+    // "progressive clocking".
     if (tempObj['#forged'] === true) {
       tempObj['#finished'] = true
       res({ '$ref': to, '$outcome': true })
@@ -273,64 +363,124 @@ function finishes(tempObj) {
 }
 
 /**
- * @name finishedBy() {}
+ * @name finishedBy
  */
-function finishedBy() {}
+function finishedBy() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name meets() {}
+ * @name meets
  */
-function meets() {}
+function meets() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name metBy() {}
+ * @name metBy
  */
-function metBy() {}
+function metBy() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name nothing() {}
+ * @name nothing
  */
-function nothing() {}
+function nothing() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name overlapsStart() {}
+ * @name overlapsStart
  */
-function overlapsStart() {}
+function overlapsStart() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name overlapsEnd() {}
+ * @name overlapsEnd
  */
-function overlapsEnd() {}
+function overlapsEnd() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name split() {}
+ * @name split
  */
-function split() {}
+function split() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name lte() {}
+ * @name lte
  */
-function lte() {}
+function lte() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name disjunct() {}
+ * @name disjunct
  */
-function disjunct() {}
+function disjunct() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name containsDate() {}
+ * @name containsDate
  */
-function containsDate() {}
+function containsDate() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name containsDateStrict() {}
+ * @name containsDateStrict
  */
-function containsDateStrict() {}
+function containsDateStrict() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
- * @name within() {}
+ * @name within
  */
-function within() {}
+function within() {
+  var to = this
+  return new Promise((res, rej) => {
+    res({ '$ref': to, '$value': null })
+  })
+}
 
 /**
  * EXPORTS
