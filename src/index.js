@@ -37,10 +37,32 @@ function init() {
 
   var vm = this
 
+  if ( ! vm.time ) {
+    // A "static time" versus a clock which might in principle have an
+    // adjustable, dynamically changing time. Timezones are "static"
+    // temporally, even if variegated geographically, though they can be
+    // adjusted in the same sense that a logical clock might be re-
+    // parameterized. Essentially the "start time" is the starting, or
+    // "forging" of a temporal object, which might live until it's
+    // "finished."
+    console.log('No clock installed! Defaulting to a "static" time based on moment.js.')
+  }
+
   const initializedTemporalObject = Object.create(vm)
 
-  initializedTemporalObject.$id = cuid()
+  // Ident tempora object
+  initializedTemporalObject['$id'] = cuid()
+
+  // Tag as forged
+  // @TODO Think about that without vm.time the object really should not be
+  // forged, or if the vm.time clock itself is "invalid" for reasons like that
+  // the configuration of the clock is erroneous (a clock with an absurd time
+  // should not forge objects, etc.)
   initializedTemporalObject['#forged'] = true
+
+  if ( vm.time && _.isFunction(vm.time.$clock) ) {
+    initializedTemporalObject['clock'] = vm.time.$clock()
+  }
 
   _.extend(initializedTemporalObject, {
     equals                      : equals,
@@ -487,7 +509,11 @@ function within() {
  */
 
 module.exports = function(clock) {
-  if ( ! clock ) { console.log('No clock installed!') }
+  if ( ! clock ) {
+    TemporalObject.time = { '$clock': moment }
+  } else {
+    TemporalObject.time = { '$clock': clock }
+  }
   const TO = Object.create(TemporalObject)
   return TO
 }
