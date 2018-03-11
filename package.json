@@ -1,0 +1,19 @@
+{
+  "name": "temporal-objects",
+  "version": "0.0.1",
+  "description": "Temporal Objects with configurable clock bases.",
+  "main": "index.js",
+  "scripts": {
+    "test/smoke": "node ./test/index.js"
+  },
+  "keywords": [
+    "temporal-objects"
+  ],
+  "author": "nerdfiles <nerdfiles@gmail.com>",
+  "license": "WTFPL",
+  "dependencies": {
+    "cuid": "^2.1.0",
+    "lodash": "^4.17.5",
+    "moment": "^2.21.0"
+  }
+}
