@@ -71,7 +71,7 @@ function init() {
     survives                    : survives,
     contemporaryOf              : contemporaryOf,
     isForgedBeforeTerminationOf : isForgedBeforeTerminationOf,
-    terminatedAfterBirthOf      : terminatedAfterBirthOf,
+    terminatedAfterForgeOf      : terminatedAfterForgeOf,
     nothing                     : nothing,
     within                      : within,
     containsDate                : containsDate,
