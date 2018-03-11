@@ -1,10 +1,11 @@
 /**
  * @usage
  * var temporalObject = require('TemporalObject')(vectorClock)
- * var tempObj1 = temporalObject.init()
- * var tempObj2 = temporalObject.init()
  *
  * function finishingSchool() {
+ *
+ *   var tempObj1 = temporalObject.init()
+ *   var tempObj2 = temporalObject.init()
  *
  *   tempObj1.forged()
  *     .finishes(tempObj2)
@@ -246,15 +247,28 @@ function startedBy() {}
 
 /**
  * @name finishes() {}
+ * @param {Object} tempObj A temporal object which may or may not have been
+ * forged (so check with the method-promise!). So, an object merely with a
+ * clock base that has not been initialized can be "finished" pre-emptively
+ * such that when it is initialized, it is forged as "finished" necessarily.
+ * @TODO
  */
-function finishes() {
+function finishes(tempObj) {
   var defaultState = false
   var to = this
   return new Promise((res, rej) => {
-    if (defaultState)
-      rej({ '$ref': to, '$outcome': true })
-    else
+    if (tempObj['#forged'] === true) {
+      tempObj['#finished'] = true
       res({ '$ref': to, '$outcome': true })
+    } else if (tempObj['#forged'] === undefined) {
+      tempObj['#finished'] = false
+      rej({ '$ref': to, '$outcome': false })
+    } else {
+      // #forged is false; so we do not set the object and respond that we
+      // have not changed the temporal object while allowing the rest of the
+      // Promise to continue.
+      res({ '$ref': to, '$outcome': false })
+    }
   })
 }
 
