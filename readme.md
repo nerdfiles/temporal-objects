@@ -1,13 +1,14 @@
-#Temporal Objects
+# Temporal Objects
 
 Temporal Objects with configurable clock bases.
 
-##Test
+## Test
 
     $ npm run test/smoke
 
-##Usage
+## Usage
 
+```javascript
     var baseClock = null
     var vectorClock = null
     var TempObj1 = require('temporal-objects')(baseClock)
@@ -30,3 +31,4 @@ Temporal Objects with configurable clock bases.
         console.log(res)
       })
     })
+```
